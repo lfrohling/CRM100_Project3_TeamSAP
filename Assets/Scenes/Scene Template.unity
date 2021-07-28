@@ -1528,5 +1528,6 @@ MonoBehaviour:
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
   m_TurnUsage: 0
-  m_Controllers: []
+  m_Controllers:
+  - {fileID: 504949009}
   m_DeadZone: 0.75
