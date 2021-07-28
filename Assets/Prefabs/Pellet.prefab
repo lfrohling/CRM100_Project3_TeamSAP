@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2435710660847852145}
   - component: {fileID: 686196215588158000}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Pellet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4e1c2c2f0f7ce8e4e8e38c472e63d9cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
