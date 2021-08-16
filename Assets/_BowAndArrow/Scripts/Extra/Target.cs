@@ -4,19 +4,17 @@ public class Target : MonoBehaviour, IArrowHittable
 {
     public float forceAmount = 1.0f;
     public Material otherMaterial = null;
-    public GameObject targetFragments;
 
     public void Hit(Arrow arrow)
     {
-        this.gameObject.SetActive(false);
-        GameObject brokenTarget = Instantiate(targetFragments, this.gameObject.transform.position, targetFragments.gameObject.transform.rotation);
-        //ApplyForce(arrow.transform.forward);
+        ApplyMaterial();
+        ApplyForce(arrow.transform.forward);
     }
 
     public void Hit(Pellet pellet)
     {
-        this.gameObject.SetActive(false);
-        GameObject brokenTarget = Instantiate(targetFragments, this.gameObject.transform.position, this.gameObject.transform.rotation);
+        ApplyMaterial();
+        ApplyForce(pellet.transform.forward);
     }
 
     private void ApplyMaterial()
