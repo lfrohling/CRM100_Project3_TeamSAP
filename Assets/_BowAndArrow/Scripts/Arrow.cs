@@ -113,8 +113,8 @@ public class Arrow : XRGrabInteractable
         // Check if there was a hit
         if (Physics.Linecast(lastPosition, tip.position, out RaycastHit hit, layerMask))
         {
-        TogglePhysics(false);
-        ChildArrow(hit);
+        //TogglePhysics(false);
+        //ChildArrow(hit);
         CheckForHittable(hit);
         }
 
