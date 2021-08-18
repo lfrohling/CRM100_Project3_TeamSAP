@@ -4,11 +4,14 @@ public class Target : MonoBehaviour, IArrowHittable
 {
     public float forceAmount = 1.0f;
     public Material otherMaterial = null;
+    public GameObject targetFragments;
 
     public void Hit(Arrow arrow)
     {
-        ApplyMaterial();
+        this.gameObject.SetActive(false);
+        Instantiate(targetFragments, this.transform.position, new Quaternion(-90, -90, 0, 0));
         ApplyForce(arrow.transform.forward);
+        //LevelSystem.Score();
     }
 
     public void Hit(Pellet pellet)
