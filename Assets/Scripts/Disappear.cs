@@ -17,7 +17,8 @@ public class Disappear : MonoBehaviour
         counter += Time.deltaTime;
         if (counter >= 5f)
         {
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }
